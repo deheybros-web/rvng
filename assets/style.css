@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #e8e8e8;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.7;
+}
+
+/* HEADING */
+
+.heading {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.headingCard {
+    width: 100%;
+    max-width: 800px;
+    padding: 70px 40px;
+    text-align: center;
+
+    border: 1px solid #292929;
+    background: #0d0d0d;
+
+    box-shadow: 0 0 60px rgba(255, 255, 255, 0.03);
+}
+
+.headingCard h1 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #f1f1f1;
+}
+
+/* BUTTON */
+
+.btns {
+    margin-top: 15px;
+}
+
+.btnHasil {
+    padding: 12px 28px;
+
+    background: transparent;
+    color: #ddd;
+
+    border: 1px solid #555;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    transition: 0.25s ease;
+}
+
+.btnHasil:hover {
+    background: #e8e8e8;
+    color: #080808;
+    border-color: #e8e8e8;
+}
+
+/* DIVIDER */
+
+hr {
+    border: none;
+    border-top: 1px solid #292929;
+}
+
+/* MAIN */
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px 100px;
+}
+
+.mainCard {
+    width: 100%;
+    max-width: 850px;
+
+    padding: 50px;
+
+    background: #0d0d0d;
+    border: 1px solid #292929;
+}
+
+.mainCard h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #f1f1f1;
+}
+
+.mainCard img {
+    display: block;
+
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+
+    margin: 0 auto 30px;
+
+    border: 1px solid #333;
+}
+
+/* PARAGRAPH */
+
+.paragraf {
+    color: #aaa;
+    font-size: 16px;
+}
+
+.paragraf p {
+    margin-bottom: 30px;
+}
+
+/* ARTIST */
+
+.artistList {
+    border-top: 1px solid #292929;
+    padding-top: 25px;
+}
+
+.artistList h3 {
+    margin-bottom: 10px;
+    color: #ddd;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.artistList ul {
+    padding-left: 20px;
+    color: #999;
+}
+
+.artistList li {
+    margin-bottom: 5px;
+}
+
+/* FINAL TEXT */
+
+body > h1 {
+    max-width: 850px;
+
+    margin: 0 auto 100px;
+    padding: 0 20px;
+
+    text-align: center;
+
+    font-size: clamp(1.4rem, 4vw, 2.5rem);
+    font-weight: normal;
+
+    color: #ddd;
+    letter-spacing: 1px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .headingCard {
+        padding: 50px 25px;
+    }
+
+    .headingCard h1 {
+        letter-spacing: 1px;
+    }
+
+    .mainCard {
+        padding: 30px 20px;
+    }
+
+    .mainCard h2 {
+        font-size: 1.6rem;
+    }
+
+    .paragraf {
+        font-size: 15px;
+    }
+}
